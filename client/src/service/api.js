@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = '';
+const API_URL = 'gmailclone-mzhy.onrender.com';
 
 const API_GMAIL = async( urlObject,payload ,type) => {
     return await axios ({
