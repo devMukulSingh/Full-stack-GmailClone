@@ -1,12 +1,12 @@
 import axios from "axios";
 
-// const API_URL = '';
+const api_url = "";
 
 const API_GMAIL = async( urlObject,payload ,type) => {
     return await axios ({
         method: urlObject.method,
-        url: `${urlObject.endpoint}/${type}`,
-        data: payload
+        url: `${api_url}/${urlObject.endpoint}/${type}`,
+        data: payload,
     })
 }
 

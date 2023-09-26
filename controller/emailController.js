@@ -13,7 +13,7 @@ export const saveSentEmail = async(req,res) => {
 
 ////Getting the Emails from the Database to show at the Frontend
 export const getEmails = async( req,res) => {
-let emails;
+  let emails;
   try {
     if(req.params.type === 'bin'){
       emails = await emailModel.find( { bin:true } );

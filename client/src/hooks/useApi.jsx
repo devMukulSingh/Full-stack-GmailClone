@@ -9,7 +9,7 @@ const useApi =(urlObject) => {
 
     const call = async( payload, type ='' ) => {
         setLoading(true);
-        
+        console.log(urlObject);
      try {
            const res = await API_GMAIL(urlObject,payload,type);
            setResponse(res.data);
